@@ -1,0 +1,45 @@
+* {
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  scroll-snap-align: start;
+}
+
+.container{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.header{
+  background: rgb(36, 164, 138);
+}
+
+.presentation{
+  background: rgb(211, 79, 79);
+}
+
+.skills{
+  background: rgb(67, 91, 175);
+}
+
+.projects{
+  background: rgb(36, 164, 138);
+}
+
+.experience{
+  background: rgb(211, 79, 79);
+}
+
+.contact{
+  background: rgb(67, 91, 175);
+}
