@@ -60,7 +60,7 @@ p {
 }
 .cta-secondary{
   display: inline-block;
-	padding: 10px 30px;
+	padding: 10px 20px;
 	color: white;
 	background-color: transparent;
 	border: 2px solid #8E54E9;
@@ -469,13 +469,15 @@ p {
 }
 #about .col-right .cta {
 	color: black;
-	margin-bottom: 20px;
+	margin-top: 0px;
+	margin-bottom: 10px;
 	padding: 10px 20px;
 	font-size: 2rem;
 }
 #about .col-right .cta-secondary {
 	color: black;
-	margin-bottom: 17px;
+	margin-top: 10px;
+	margin-bottom: 0px;
 	padding: 10px 20px;
 	font-size: 2rem;
 }
