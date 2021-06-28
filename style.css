@@ -58,7 +58,24 @@ p {
 	transition: 0.3s ease;
 	transition-property: background-color, color;
 }
+.cta-secondary{
+  display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid #8E54E9;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 10px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+}
 .cta:hover {
+	color: white;
+	background-color: #8E54E9;
+}
+.cta-secondary:hover {
 	color: white;
 	background-color: #8E54E9;
 }
@@ -210,11 +227,12 @@ p {
 #hero::after {
 	content: '';
 	position: absolute;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	left: 0;
 	top: 0;
 	height: 100%;
 	width: 100%;
-	opacity: .9;
+	opacity: .7;
 	z-index: -1;
 }
 #hero .hero {
@@ -291,7 +309,6 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(./img/img-1.png);
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
@@ -309,9 +326,10 @@ p {
 	opacity: 0.9;
 	z-index: -1;
 }
-#skills .skill-bottom .icon {
-	height: 80px;
-	width: 80px;
+#skills .skill-bottom .icon i{
+	color: white;
+  font-size: 3rem;
+  padding-right: 10px;
 	margin-bottom: 20px;
 }
 #skills .skill-item h2 {
@@ -389,13 +407,34 @@ p {
 	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.7;
+	opacity: 0.4;
 }
 #projects .project-img img {
 	transition: 0.3s ease transform;
 }
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
+}
+#projects .project-item i{
+  font-size: 2rem;
+  color: white;
+}
+#projects .project-item .github-link a{
+  color: white;
+  margin-top: 40px;
+}
+#projects .project-item .live-link a{
+  color: white;
+ margin-bottom: -5px;
+}
+#projects .project-item a:hover{
+  color: #8E54E9;
+}
+#projects .project-item i:hover{
+  color: #8E54E9;
+}
+#projects .project-item .live-link a:hover{
+ color: #8E54E9;
 }
 /* End Projects section */
 
@@ -425,7 +464,13 @@ p {
 }
 #about .col-right .cta {
 	color: black;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+#about .col-right .cta-secondary {
+	color: black;
+	margin-bottom: 17px;
 	padding: 10px 20px;
 	font-size: 2rem;
 }
@@ -476,9 +521,9 @@ p {
 	box-shadow: 0px 0px 5px 0 #0000002c;
 }
 #contact .icon {
-	width: 70px;
-	margin: 0 auto;
-	margin-bottom: 10px;
+	font-size: 3rem;
+  color: #8E54E9;
+  padding-top: 30px;
 }
 #contact .contact-info h1 {
 	font-size: 2.5rem;
@@ -518,13 +563,14 @@ p {
 	height: 50px;
 	width: 50px;
 	margin: 0 5px;
+  margin-left: 25px;
 }
-#footer .social-item img {
-	filter: grayscale(1);
-	transition: 0.3s ease filter;
+#footer .social-item i {
+  color: white;
+  font-size: 3rem;
 }
-#footer .social-item:hover img {
-	filter: grayscale(0);
+#footer .social-item:hover i {
+	color: #8E54E9;
 }
 #footer p {
 	color: white;
@@ -598,7 +644,7 @@ p {
 	#projects .project-item {
 		height: 400px;
 		margin: 0;
-		width: 100%;
+		width: 90vh
 		border-radius: 0;
 	}
 	#projects .all-projects .project-info {
